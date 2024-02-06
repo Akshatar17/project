@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Flight Screen</title>
+    <link rel="stylesheet" type="text/css" href="master.css"><link>
+    <script src="master.js"></script>
+ 
+</head>
+<body>
+    <div class="wrapper">
+        <section class="working panel">
+            <h1>Master Flight Screen</h1>
+        </section>
+        </div>
+        <div class="container">
+            <div class="flightno">
+            <label for="number">FlightNo:</label>
+            <input type="text" id="number" name="FlightNo" value="">
+        </div>
+                <div class="flighttype">
+                     <label for="flight">Flight Type:</label>
+                     
+                     <label for="flight" name="Flight">Jet<input type="checkbox" id="flight" name="flight" value="flight"></label>
+                     
+                    <label for="flight" name="flight">AirBus<input type="checkbox" id="flight" name="flight" value="flight"></label>
+                   
+                
+                 </div>
+                 <div class="airlinename">
+                       <label>AirLineName:</label>
+                       <select class="select">
+                                <option value=""> </option>
+                                <option value="airasiaindia">AirAsiaIndia</option>
+                              <option value="airindia">AirIndia</option>
+                               <option value="indigo">IndiGo</option>
+                                <option value="spicejet">SpiceJet</option>
+                                <option value="vistara">Vistara</option>
+                       </select>
+                 </div>
+                 <div class="EstablishedDate">
+                         <label>Established Date:</label>
+                         <input type="datetime-local"><input type="datetime-local">
+                </div>
+            </div>
+            
+            <button class="button">Search</button>
+            <button class="button button2">Reset</button>
+            <div class="aa-htmltable">
+                <table border="1" >
+             <thead>
+                <tr>
+                    <th><input type="checkbox" id="flight"name="flight"value="flight"</th>
+                    <th>FlightNo</th>
+                    <th>AirLinesName</th>
+                    <th>FlightType</th>
+                    <th>Departurelocation</th>
+                    <th>DepartureAirport</th>
+                    <th>SeatCapacity</th>
+                    <th>EstablishedDate</th>
+                    <th>CreatedAt</th>
+                    <th>Actions</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" id="flight" name="flight" value="flight"></td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td><button type ="button" id="btn9" onclick="openForm()">Update</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="flight" name="flight" value="flight"></td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td><button type ="button"id="btn8" onclick="openForm()" >Update</button></td>
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="checkbox" id="flight" name="flight" value="flight"></td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td><button type="text"id="btn7" onclick="openForm()">Update</button></td>
+                    
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+     <div>
+       <label for="Logout" >
+     <button type="text" id="logs">Logout</button>
+       </label>
+       <label for="Add Flight">
+        <button type="text" id="btn" class="add-flight" onclick="openForm()" >Add Flight</button>
+       </label>
+       <label for="Delete">
+        <button type="text" id="btn1" class="delete" onclick="openForm1()">Delete</button>
+        
+       </label>
+       <label for="csv Download">
+        <button type="text" id="btn2">csv Download</button>
+       </label>
+       
+</div>
+<div class="popup" id="popup">
+
+  
+    <form action="" class="form-container">
+        <h2>Add/update Screen</h2>
+        
+    <table class="two" >
+        <tr>
+            <th>
+                <label for="AirLinesName">AirLinesName:</label>
+                </th>
+                <td>
+                <select class="select">
+                                <option value=""> </option>
+                                <option value="airasiaindia">AirAsiaIndia</option>
+                              <option value="airindia">AirIndia</option>
+                               <option value="indigo">IndiGo</option>
+                                <option value="spicejet">SpiceJet</option>
+                                <option value="vistara">Vistara</option>
+                       </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="id">Flight No:</label>
+                        </th>
+                        <td>
+                            <input type="text"id="id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="Departurelocation">Departurelocation:</label>
+                        </th>
+                        <td>
+                            <input type="text"name="Departurelocation">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="Destinationlocation">Destinationlocation:</label>
+                        </th>
+                        <td>
+                            <input type="text"name="Destinationlocation">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="flight">Flight Type:</label>
+                            </th>
+                     <td>
+                     <label for="flight" name="Flight">Jet<input type="radio" id="flight"></label>
+                     
+                    <label for="flight" name="flight">AirBus<input type="radio" id="flight"></label>
+                   </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Seatingcapacity">Seatingcapacity:</label>
+                    </th>
+                    <td>
+                        <input type="text"name="Seatingcapacity">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Established Date:</label>
+                    </th>
+                    <td>
+                         <input type="datetime-local">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Flight Image:</label>
+                    </th>
+                    <td>
+                        <input type="file" id="myfile" name="myfile"><br><br>
+                    </td>
+                </tr>
+            
+       
+                </table>
+                <button type="submit" id="btn3">Add/update</button>
+                <button type="text" id="btn4" class="close" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+                <div class="form1" id="form1">
+                    <form action="" class="form1">
+                        <h2>Do you want to delete?</h2>
+                        <button type="submit" id="btn5">Yes</button>
+                        <button type="text" id="btn6" class="close" onclick="closeForm1()">Cancel</button>
+                        </form>
+              </div>
+           <script>
+                   function openForm() {
+                      document.getElementById("popup").style.display = "block";
+                   }
+
+                   function closeForm() {
+                      document.getElementById("popup").style.display = "none";
+                     }
+             </script>
+   <script>
+          function openForm1(){
+            document.getElementById("form1").style.display = "block";
+ }
+          function closeForm1(){
+            document.getElementById("form1").style.display = "none";
+          }
+   </script>
+    </body>
+</html>
+               

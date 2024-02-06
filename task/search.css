@@ -1,0 +1,103 @@
+body{
+    font-family: arial;
+    font-size:  20px;;
+    margin:1;
+    background-color: rgb(190, 217, 233);
+    min-height: 100vh;
+
+}
+.wrapper{
+    display:flex;
+    flex-wrap: nowrap;
+    padding-left: 580px;
+
+}
+.container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.flightno{
+    margin-left:220px;
+    margin-top: 40px;
+}
+.airlinename{
+    
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.flighttype{
+    margin-top: 40px;
+}
+.EstablishedDate
+{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.button{
+    background-color: #25aceb;
+      border: none;
+     padding: 10px 20px;
+     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 300px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.button2 {
+    background-color: #f44336;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin:150px;
+   margin-top: 40px;
+   cursor: pointer;
+}
+
+
+ * {
+    
+    box-sizing: border-box;
+
+  }
+   table {
+    display: table;
+    border:block;
+    width: 50%;
+    background-color: aliceblue;
+    margin-left: 140px;
+    margin-top: -210px;
+    height:50%;
+
+  }
+  thead{
+    background-color: aquamarine;
+  }
+  
+  
+  #logs
+  {
+    height:40px;
+    width:120px;
+    border-radius:20px;
+    float:right;
+    padding:3px;
+    margin:40px;
+    margin-top: -420px;
+  }
+   
+
+
+
+
+
+
+
+  
+
+
+              
